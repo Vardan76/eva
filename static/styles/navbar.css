@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+   
+    
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 1em;
+    
+    
+}
+.navlist>a:hover{
+    background-color: rgb(100, 100, 100);
+}
+.hamb{
+    display: none;
+    width: 49px;
+    height: 48px;
+   
+}
+
+.homew{
+    display: flex;
+}
+.homew :hover{
+    background-color: rgb(100, 100, 100);
+}
+.homew a{
+    display: block;
+    color: white;
+    padding: 1em;
+}
+.homebutton{
+    display: none;
+    width: 48px;height: 48px; background-color: rgb(240, 237, 237);
+    border: 2px solid black;
+    
+}
+.homebutton img{
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    
+}
+.homebutton a:hover{
+background-color: rgb(100, 100, 100);;
+}
+@media(max-width:1000px){
+   .hamb{
+    display: block;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+   } 
+   .button{
+    width: 100%;
+    height: 100%;
+   }
+   .navlist{
+    display: none;
+   }
+   .drop:hover .navlist{
+    display: block;
+    position: absolute ;
+    right: 1px;
+    background-color: black;
+}
+.navbar{
+    justify-content: space-between;
+
+}
+.homew{
+    display: none;
+}
+.homebutton{
+    display: flex;
+}
+
+}
